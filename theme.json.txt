@@ -1,0 +1,172 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",   // Указывает на схему JSON для темы WordPress
+    "version": 2,   // Номер версии темы
+    "settings": {   // Настройки темы
+        "appearanceTools": true,    // Включает инструменты для изменения внешнего вида
+        "color": {  // Настройки цвета
+            "defaultPalette": false,    // Не используется стандартная палитра цветов
+            "palette": [    // Пользовательская палитра цветов
+                { "slug": "u-white", "color": "rgb(255,255,255)", "name": "Udemy White" },
+                { "slug": "u-gray-100", "color": "rgb(243 244 246)", "name": "Udemy Gray 100" },
+                { "slug": "u-gray-200", "color": "rgb(229 231 235)", "name": "Udemy Gray 200" },
+                { "slug": "u-gray-300", "color": "rgb(209 213 219)", "name": "Udemy Gray 300" },
+                { "slug": "u-gray-400", "color": "rgb(156 163 175)", "name": "Udemy Gray 400" },
+                { "slug": "u-gray-500", "color": "rgb(107 114 128)", "name": "Udemy Gray 500" },
+                { "slug": "u-gray-600", "color": "rgb(75 85 99)", "name": "Udemy Gray 600" },
+                { "slug": "u-gray-700", "color": "rgb(55 65 81)", "name": "Udemy Gray 700" },
+                { "slug": "u-gray-800", "color": "rgb(31 41 55)", "name": "Udemy Gray 800" },
+                { "slug": "u-gray-900", "color": "rgb(17 24 39)", "name": "Udemy Gray 900" },
+                { "slug": "u-primary", "color": "rgb(239 68 68)", "name": "Udemy Primary" },
+                { "slug": "u-accent", "color": "rgb(67 56 202)", "name": "Udemy Accent" },
+                { "slug": "u-success", "color": "rgb(52 211 153)", "name": "Udemy Success" },
+                { "slug": "u-info", "color": "rgb(96 165 250)", "name": "Udemy Info" },
+                { "slug": "u-warning", "color": "rgb(251 146 60)", "name": "Udemy Warning" },
+                { "slug": "u-danger", "color": "rgb(236 72 153)", "name": "Udemy Danger" }
+            ],
+            "background": true, // Включает настройки цвета фона
+            "text": true,   // Включает настройки цвета текста
+            "link": true,   // Включает настройки цвета ссылок
+            "custom": true, // Включает пользовательские настройки цвета
+            "duotone": [    // Настройки дуотонового цвета
+                { "slug": "u-pink-sunset","colors": ["#11245e", "#dc4379"], "name": "Udemy Pink Sunset" }
+            ],
+            "defaultGradients": false,  // Не используются стандартные градиенты
+            "gradients": [  // Пользовательские настройки градиента
+                {
+                    "slug": "u-summer-dog",
+                    "name": "Udemy Summer Dog",
+                    "gradient": "linear-gradient(#a8ff78, #78ffd6)"
+                }
+            ]
+        },
+        "blocks": { // Настройки блоков
+            "core/site-title": {    // Настройки заголовка сайта
+                "color": {  // Настройки цвета для заголовка сайта
+                    "defaultPalette": true, // Используется стандартная палитра цветов
+                    "palette": [    // Пользовательская палитра для цвета заголовка сайта
+                        { "slug": "u-primary", "color": "#ef4444", "name": "Udemy Primary" }
+                    ],
+                    "link": true,   // Включает настройки цвета ссылок
+                    "custom": true, // Включает пользовательские настройки цвета
+                    "gradients": [],    // Нет градиентов для цвета заголовка сайта
+                    "customGradient": false // Не используются пользовательские градиенты для цвета заголовка сайта
+                },
+                "typography": { // Настройки типографики для заголовка сайта
+                    "fontFamilies": [   // Пользовательские семейства шрифтов
+                        { 
+                            "fontFamily": "Pacifico, sans-serif",   // Определение семейства шрифтов
+                            "slug": "u-pacifico",
+                            "name": "Udemy Pacifico"    // Название семейства шрифтов
+                        }
+                    ]
+                }
+            },
+            "core/cover": { // Настройки обложки
+                "color": {  // Настройки цвета
+                    "duotone": [],  // Дуотоновый цвет не используется
+                    "customDuotone": false  // Не используются пользовательские дуотоновые цвета
+                }
+            },
+            "core/preformatted": {  // Настройки предварительно отформатированного текста
+                "typography": { // Настройки типографики
+                    "fontSizes": [],    // Размеры шрифтов не определены
+                    "customFontSize": false // Не используются пользовательские размеры шрифтов
+                }
+            }
+        },
+        "border": { // Настройки границ
+            "color": true,  // Включает настройки цвета границ
+            "radius": true, // Включает настройки радиуса границ
+            "style": true,  // Включает настройки стиля границ
+            "width": true   // Включает настройки ширины границ
+        },
+        "typography": { // Настройки типографики
+            "fontFamilies": [   // Настройки семейства шрифтов...
+                { 
+                    "fontFamily": "Rubik, sans-serif", 
+                    "slug": "u-rubik",
+                    "name": "Udemy Rubik"
+                }
+            ],
+            "fontSizes": [  // Настройки размера шрифта...
+                { "slug": "small", "size": "0.75rem", "name": "Small" },
+                { "slug": "medium", "size": "1.25rem", "name": "Medium" },
+                { "slug": "large", "size": "2.25rem", "name": "Large" },
+                { "slug": "large", "size": "3rem", "name": "Extra Large" },
+                { "slug": "gigantic", "size": "3.75rem", "name": "Gigantic" }
+            ],
+            "lineHeight": true, // Включает настройки высоты строки
+            "dropCap": true,    // Включает начертание начальной буквы
+            "fontWeight": true, // Включает настройки толщины шрифта
+            "fontStyle": true,  // Включает настройки стиля шрифта
+            "textTransform": true,  // Включает настройки трансформации текста
+            "letterSpacing": true,  // Включает настройки межбуквенного интервала
+            "textDecoration": true  // Включает настройки декорации текста
+        },
+        "layout": { // Настройки макета
+            "contentSize": "800px", // Размер контента
+            "wideSize": "1100px"    // Ширина макета
+        },
+        "spacing": {    // Настройки отступов
+            "margin": true,
+            "padding": true,
+            "units": [  // Доступные единицы для отступов
+                "px", "em", "rem", "vh", "vw", "%"  // Определение единиц
+            ]
+        }
+    },
+    "styles": { // Стили для темы
+        "color": {  // Цветовые стили
+            "text": "var(--wp--preset--color--u-gray-700)", // Цвет текста
+            "background": "var(--wp--preset--color--u-white)"   // Цвет фона
+        },
+        "elements": {   // Стили элементов
+            "link": {   // Стили ссылок
+                "color": {  // Цвет ссылок
+                    "text": "var(--wp--preset--color--u-primary)"   // Цвет текста ссылок
+                }
+            }
+        },
+        "blocks": { // Стили блоков
+            "core/button": {    // Стили кнопок
+                "color": {  // Цвет кнопок
+                    "gradient": "var(--wp--preset--gradient--u-summer-dog)" // Градиент кнопок
+                }
+            },
+            "core/pullquote": { // Стили блока с цитатами
+                "border": { // Граничные стили
+                    "width": "2px", // Ширина границы
+                    "radius": "10px",   // Радиус границы
+                    "style": "solid",   // Стиль границы
+                    "color": "var(--wp--preset--color--u-primary) !important"   // Цвет границы с важностью
+                }
+            },
+            "core/site-title": {    // Стили заголовка сайта
+                "typography": { // Типографические стили
+                    "fontFamily": "var(--wp--preset--font-family--u-pacifico)"  // Семейство шрифтов заголовка сайта
+                }
+            }
+        },
+        "typography": { // Типографические стили
+            "fontFamily": "var(--wp--preset--font-family--u-rubik)",    // Семейство шрифтов
+            "fontSize": "16px", // Размер шрифта
+            "fontStyle": "normal",  // Стиль шрифта
+            "fontWeight": "normal", // Толщина шрифта
+            "lineHeight": "inherit",    // Высота строки
+            "textDecoration": "none",   // Декорация текста
+            "textTransform": "none" // Преобразование текста
+        },
+        "spacing": {    // Стили отступов
+            "margin": { // Отступы
+                "top": "0px",   // Верхний отступ
+                "bottom": "0px" // Нижний отступ
+            },
+            "padding": {    // Заполнение
+                "top": "0px",   // Верхнее заполнение
+                "bottom": "0px",    // Нижнее заполнение
+                "left": "0px",  // Левое заполнение
+                "right": "0px"  // Правое заполнение
+            }
+        }
+    }
+}
